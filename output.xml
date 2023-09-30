@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230930 15:32:41.619" rpa="false" schemaversion="4">
+<suite id="s1" name="Remove-Youtube-Comments" source="C:\dev\remove-youtube-comments">
+<suite id="s1-s1" name="Remove-Youtube-Comments" source="C:\dev\remove-youtube-comments\remove-youtube-comments.robot">
+<test id="s1-s1-t1" name="Nix Those Comments Broh" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://myactivity.google.com/page?hl=en&amp;utm_medium=web&amp;utm_source=youtube&amp;pli=1&amp;page=youtube_comments</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230930 15:32:41.844" level="INFO">Opening browser 'firefox' to base url 'https://myactivity.google.com/page?hl=en&amp;utm_medium=web&amp;utm_source=youtube&amp;pli=1&amp;page=youtube_comments'.</msg>
+<status status="PASS" starttime="20230930 15:32:41.844" endtime="20230930 15:33:08.141"/>
+</kw>
+<status status="PASS" starttime="20230930 15:32:41.844" endtime="20230930 15:33:08.141"/>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" starttime="20230930 15:32:41.639" endtime="20230930 15:33:08.143"/>
+</suite>
+<status status="PASS" starttime="20230930 15:32:41.621" endtime="20230930 15:33:08.145"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Remove-Youtube-Comments">Remove-Youtube-Comments</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Remove-Youtube-Comments">Remove-Youtube-Comments.Remove-Youtube-Comments</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
