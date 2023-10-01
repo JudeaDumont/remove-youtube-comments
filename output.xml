@@ -1,33 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230930 15:32:41.619" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230930 17:52:27.175" rpa="false" schemaversion="4">
 <suite id="s1" name="Remove-Youtube-Comments" source="C:\dev\remove-youtube-comments">
 <suite id="s1-s1" name="Remove-Youtube-Comments" source="C:\dev\remove-youtube-comments\remove-youtube-comments.robot">
 <test id="s1-s1-t1" name="Nix Those Comments Broh" line="9">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://myactivity.google.com/page?hl=en&amp;utm_medium=web&amp;utm_source=youtube&amp;pli=1&amp;page=youtube_comments</arg>
+<arg>browser=chrome</arg>
+<arg>options=add_argument("--user-data-dir=C:/Users/My name is chef/AppData/Local/Google/Chrome/User Data"); add_argument('--profile-directory=Profile 1')</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230930 15:32:41.844" level="INFO">Opening browser 'firefox' to base url 'https://myactivity.google.com/page?hl=en&amp;utm_medium=web&amp;utm_source=youtube&amp;pli=1&amp;page=youtube_comments'.</msg>
-<status status="PASS" starttime="20230930 15:32:41.844" endtime="20230930 15:33:08.141"/>
+<msg timestamp="20230930 17:52:27.376" level="INFO">Opening browser 'chrome' to base url 'https://myactivity.google.com/page?hl=en&amp;utm_medium=web&amp;utm_source=youtube&amp;pli=1&amp;page=youtube_comments'.</msg>
+<status status="PASS" starttime="20230930 17:52:27.376" endtime="20230930 17:52:34.933"/>
 </kw>
-<status status="PASS" starttime="20230930 15:32:41.844" endtime="20230930 15:33:08.141"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 minutes</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="FAIL" starttime="20230930 17:52:34.934" endtime="20230930 17:52:48.072"/>
+</kw>
+<status status="FAIL" starttime="20230930 17:52:27.375" endtime="20230930 17:52:48.073">Execution terminated by signal</status>
 </test>
 <doc>A test suite with a single test for valid login.
 
 This test has a workflow that is created using keywords in
 the imported resource file.</doc>
-<status status="PASS" starttime="20230930 15:32:41.639" endtime="20230930 15:33:08.143"/>
+<status status="FAIL" starttime="20230930 17:52:27.197" endtime="20230930 17:52:48.075"/>
 </suite>
-<status status="PASS" starttime="20230930 15:32:41.621" endtime="20230930 15:33:08.145"/>
+<status status="FAIL" starttime="20230930 17:52:27.177" endtime="20230930 17:52:48.078"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Remove-Youtube-Comments">Remove-Youtube-Comments</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Remove-Youtube-Comments">Remove-Youtube-Comments.Remove-Youtube-Comments</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Remove-Youtube-Comments">Remove-Youtube-Comments</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Remove-Youtube-Comments">Remove-Youtube-Comments.Remove-Youtube-Comments</stat>
 </suite>
 </statistics>
 <errors>
